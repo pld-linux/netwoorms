@@ -3,7 +3,7 @@ Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
 Release:	5
-License:	Free, but read README
+License:	Free (see README)
 Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
 Group:		Applications/Games
 Source0:	%{name}-%{version}.tar.gz
