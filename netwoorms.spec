@@ -31,7 +31,6 @@ nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make} CFLAGS="$RPM_OPT_FLAGS"
 
@@ -43,14 +42,15 @@ cd contrib/nwoobot-0.3
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/netwoorms/{maps,texts}}
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
+
 install nwoosrv nwoo contrib/nwoobot-0.3/nwoobot $RPM_BUILD_ROOT%{_bindir}
 install maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
 install texts/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/texts
 install contrib/maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
 install contrib/nwoobot-0.3/README README.bot
 install docs/* $RPM_BUILD_ROOT%{_mandir}/man1
-gzip -9nf LICENSE README NEWS README.bot \
-	$RPM_BUILD_ROOT%{_mandir}/man1/*
+
+gzip -9nf LICENSE README NEWS README.bot
 
 %clean
 rm -rf $RPM_BUILD_ROOT
