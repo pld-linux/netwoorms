@@ -13,7 +13,7 @@ BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
 Requires:	zlib
 Requires:	ncurses
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 NetWoorms is a little, multiplayer, networked game, that runs on the 
