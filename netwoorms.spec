@@ -2,11 +2,11 @@ Summary:	A nibbles clone
 Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
-Release:	3
+Release:	4
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
-Copyright:	Free, but read README
+License:	Free, but read README
 Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
 URL:		http://azzie.robotics.net/
 Source0:	%{name}-%{version}.tar.gz
@@ -32,10 +32,14 @@ nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 %setup -q
 
 %build
-%configure
+./configure
 %{__make} CFLAGS="%{rpmcflags}"
 
 cd contrib/nwoobot-0.3
+rm -f missing
+aclocal
+autoconf
+automake -a -c
 %configure
 %{__make} CFLAGS="%{rpmcflags}"
 
