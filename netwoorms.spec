@@ -6,8 +6,6 @@ Release:	5
 License:	Free, but read README
 Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
 Group:		Applications/Games
-Group(de):	Applikationen/Spiele
-Group(pl):	Aplikacje/Gry
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://azzie.home.staszic.waw.pl/?en
 BuildRequires:	autoconf
