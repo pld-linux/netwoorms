@@ -6,7 +6,7 @@ Summary(pl):	Klon gry nibbles
 Group:		Games
 Group(pl):	Gry
 Copyright:	Free but read README
-URL:		http://azzie.home.staszic.waw.pl/
+URL:		http://azzie.xnot.com/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
@@ -46,9 +46,9 @@ install nwoosrv nwoo contrib/nwoobot-0.3/nwoobot $RPM_BUILD_ROOT%{_bindir}
 install maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
 install texts/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/texts
 install contrib/maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
-install contrib/README README.contrib
+install contrib/nwoobot-0.3/README README.bot
 install docs/* $RPM_BUILD_ROOT%{_mandir}/man1
-gzip -9nf LICENSE README NEWS README.contrib \
+gzip -9nf LICENSE README NEWS README.bot \
 	$RPM_BUILD_ROOT%{_mandir}/man1/*
 
 %clean
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE.gz README.gz NEWS.gz README.contrib.gz
+%doc LICENSE.gz README.gz NEWS.gz README.bot.gz
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/netwoorms
 %{_mandir}/man1/*
