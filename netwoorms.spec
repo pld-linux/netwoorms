@@ -12,8 +12,8 @@ URL:		http://azzie.robotics.net/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
-Requires:	zlib
-Requires:	ncurses
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
