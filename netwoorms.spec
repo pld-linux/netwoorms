@@ -37,7 +37,7 @@ cd contrib/nwoobot-0.3
 rm -f missing
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make} CFLAGS="%{rpmcflags}"
 
