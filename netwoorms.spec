@@ -2,7 +2,7 @@ Summary:	A nibbles clone
 Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
-Release:	4
+Release:	5
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
