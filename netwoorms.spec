@@ -2,7 +2,7 @@ Summary:	A nibbles clone
 Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
-Release:	1
+Release:	2
 Group:		Games
 Group(pl):	Gry
 Copyright:	Free, but read README
