@@ -53,14 +53,12 @@ install contrib/maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
 install contrib/nwoobot-0.3/README README.bot
 install docs/* $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf LICENSE README NEWS README.bot
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE.gz README.gz NEWS.gz README.bot.gz
+%doc LICENSE README NEWS README.bot
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/netwoorms
 %{_mandir}/man1/*
