@@ -33,11 +33,11 @@ nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 cd contrib/nwoobot-0.3
 %configure
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
