@@ -3,17 +3,17 @@ Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
 Release:	5
+License:	Free, but read README
+Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
-License:	Free, but read README
-Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
-URL:		http://azzie.robotics.net/
 Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	ncurses-devel
-BuildRequires:	zlib-devel
+URL:		http://azzie.home.staszic.waw.pl/?en
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	ncurses-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,8 +45,8 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/netwoorms/{maps,texts}}
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/netwoorms/{maps,texts}} \
+	$RPM_BUILD_ROOT%{_mandir}/man1
 
 install nwoosrv nwoo contrib/nwoobot-0.3/nwoobot $RPM_BUILD_ROOT%{_bindir}
 install maps/* $RPM_BUILD_ROOT%{_datadir}/netwoorms/maps
