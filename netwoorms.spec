@@ -32,7 +32,7 @@ nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 %setup -q
 
 %build
-./configure
+./configure --datadir=%{_datadir}
 %{__make} CFLAGS="%{rpmcflags}"
 
 cd contrib/nwoobot-0.3
