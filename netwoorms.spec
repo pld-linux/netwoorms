@@ -1,12 +1,13 @@
+Summary:	A nibbles clone
+Summary(pl):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
 Release:	1
-Summary:	A nibbles clone
-Summary(pl):	Klon gry nibbles
 Group:		Games
 Group(pl):	Gry
-Copyright:	Free but read README
-URL:		http://azzie.xnot.com/
+Copyright:	Free, but read README
+Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
+URL:		http://azzie.robotics.net/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel
 BuildRequires:	zlib-devel
