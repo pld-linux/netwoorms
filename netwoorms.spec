@@ -7,6 +7,7 @@ License:	Free (see README)
 Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
 Group:		Applications/Games
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	ddf1ac33c548b5b3112a23bdb6b5ca4c
 URL:		http://azzie.home.staszic.waw.pl/?en
 BuildRequires:	autoconf
 BuildRequires:	automake
