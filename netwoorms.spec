@@ -35,7 +35,7 @@ nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 
 cd contrib/nwoobot-0.3
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
