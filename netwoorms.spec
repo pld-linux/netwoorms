@@ -16,16 +16,16 @@ Requires:	ncurses
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-NetWoorms is a little, multiplayer, networked game, that runs on the 
-console. If you have ever played 'nibbles', you know the simple rules. The 
-only difference from the orginal version is that you get frags, not points, 
-and that you play against as many humans as you want.   
+NetWoorms is a little, multiplayer, networked game, that runs on the
+console. If you have ever played 'nibbles', you know the simple rules.
+The only difference from the orginal version is that you get frags,
+not points, and that you play against as many humans as you want.
 
 %description -l pl
-NetWoorms to ma³a gra sieciowa na wielu graczy dzia³aj±ca na konsoli. Je¶li 
-gra³e¶ kiedy¶ w 'nibbles', znasz jej proste zasady. Jedyn± ró¿nic± miêdzy 
-NetWoorms a orygina³em jest to, ¿e gra siê na fragi a nie punkty i ¿e mo¿na 
-graæ przeciwko dowolnej liczbie ludzi.   
+NetWoorms to ma³a gra sieciowa na wielu graczy dzia³aj±ca na konsoli.
+Je¶li gra³e¶ kiedy¶ w 'nibbles', znasz jej proste zasady. Jedyn±
+ró¿nic± miêdzy NetWoorms a orygina³em jest to, ¿e gra siê na fragi a
+nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
 
 %prep
 %setup -q
