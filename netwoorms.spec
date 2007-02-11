@@ -1,10 +1,10 @@
 Summary:	A nibbles clone
-Summary(pl):	Klon gry nibbles
+Summary(pl.UTF-8):   Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
 Release:	6
 License:	Free (see README)
-Vendor:		Micha³ "Azzie" Marsza³ek <azzie@staszic.waw.pl>
+Vendor:		MichaÅ‚ "Azzie" MarszaÅ‚ek <azzie@staszic.waw.pl>
 Group:		Applications/Games
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	ddf1ac33c548b5b3112a23bdb6b5ca4c
@@ -21,11 +21,11 @@ console. If you have ever played 'nibbles', you know the simple rules.
 The only difference from the orginal version is that you get frags,
 not points, and that you play against as many humans as you want.
 
-%description -l pl
-NetWoorms to ma³a gra sieciowa na wielu graczy dzia³aj±ca na konsoli.
-Je¶li gra³e¶ kiedy¶ w 'nibbles', znasz jej proste zasady. Jedyn±
-ró¿nic± miêdzy NetWoorms a orygina³em jest to, ¿e gra siê na fragi a
-nie punkty i ¿e mo¿na graæ przeciwko dowolnej liczbie ludzi.
+%description -l pl.UTF-8
+NetWoorms to maÅ‚a gra sieciowa na wielu graczy dziaÅ‚ajÄ…ca na konsoli.
+JeÅ›li graÅ‚eÅ› kiedyÅ› w 'nibbles', znasz jej proste zasady. JedynÄ…
+rÃ³Å¼nicÄ… miÄ™dzy NetWoorms a oryginaÅ‚em jest to, Å¼e gra siÄ™ na fragi a
+nie punkty i Å¼e moÅ¼na graÄ‡ przeciwko dowolnej liczbie ludzi.
 
 %prep
 %setup -q
