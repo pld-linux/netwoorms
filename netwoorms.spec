@@ -1,5 +1,5 @@
 Summary:	A nibbles clone
-Summary(pl.UTF-8):   Klon gry nibbles
+Summary(pl.UTF-8):	Klon gry nibbles
 Name:		netwoorms
 Version:	1.7
 Release:	6
